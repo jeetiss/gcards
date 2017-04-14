@@ -28,9 +28,7 @@ const server = createServer((_, res) => {
     'Access-Control-Allow-Origin': '*'
   })
 
-  setTimeout(() => {
-    res.end(content)
-  }, 2000)
+  res.end(content)
 })
 
 server.listen(5000, () => {
