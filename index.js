@@ -31,6 +31,6 @@ const server = createServer((_, res) => {
   res.end(content)
 })
 
-server.listen(5000, () => {
+server.listen(PORT, () => {
   console.log(`server work on ${PORT}`)
 })
